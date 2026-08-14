@@ -1,0 +1,238 @@
+/* ================================
+   SETTINGS PAGE
+================================ */
+
+.settings-page {
+  width: 100%;
+  max-width: 100%;
+
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  padding: 24px;
+
+  overflow-x: hidden;
+}
+
+
+/* ================================
+   SETTINGS HEADER
+================================ */
+
+.settings-header {
+  width: 100%;
+  max-width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 24px;
+
+  box-sizing: border-box;
+}
+
+.settings-header h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.settings-header p {
+  margin: 6px 0 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   SETTINGS CARDS
+================================ */
+
+.settings-card {
+  width: 100%;
+  max-width: 100%;
+
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  padding: 28px;
+
+  margin-bottom: 20px;
+
+  overflow: hidden;
+}
+
+
+/* ================================
+   CARD HEADER
+================================ */
+
+.settings-card-header {
+  width: 100%;
+
+  margin-bottom: 24px;
+}
+
+.settings-card-header h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.settings-card-header p {
+  margin: 6px 0 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+}
+
+
+/* ================================
+   FORM GRID
+================================ */
+
+.settings-form-grid {
+  width: 100%;
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+
+  box-sizing: border-box;
+}
+
+
+/* ================================
+   FIELD
+================================ */
+
+.settings-field {
+  width: 100%;
+  min-width: 0;
+}
+
+.settings-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #374151;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.settings-field input,
+.settings-field select {
+  width: 100%;
+  height: 46px;
+
+  padding: 0 13px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  outline: none;
+}
+
+.settings-field input:focus,
+.settings-field select:focus {
+  border-color: #6366f1;
+
+  box-shadow:
+    0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .settings-page {
+    padding: 20px;
+  }
+
+  .settings-card {
+    padding: 22px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .settings-page {
+    padding: 16px;
+  }
+
+  .settings-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .settings-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-card {
+    padding: 18px;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 450px) {
+
+  .settings-page {
+    padding: 12px;
+  }
+
+  .settings-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .settings-header h1 {
+    font-size: 24px;
+  }
+}

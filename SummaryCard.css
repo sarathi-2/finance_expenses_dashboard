@@ -1,0 +1,155 @@
+.summary-card {
+  position: relative;
+
+  min-height: 155px;
+
+  padding: 20px;
+
+  overflow: hidden;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.summary-card::after {
+  content: "";
+
+  position: absolute;
+
+  right: -35px;
+  bottom: -35px;
+
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+
+  opacity: 0.025;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+/* Top */
+
+.summary-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary-icon {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+}
+
+.summary-percent {
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  color: #059669;
+  background: #ecfdf5;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* Content */
+
+.summary-title {
+  margin: 15px 0 5px;
+
+  color: #6b7280;
+
+  font-size: 12px;
+}
+
+.summary-card h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.summary-bottom {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 13px;
+
+  color: #9ca3af;
+
+  font-size: 9px;
+}
+
+/* Colors */
+
+.summary-card.income {
+  color: #16a34a;
+}
+
+.summary-card.income .summary-icon {
+  color: #16a34a;
+  background: #dcfce7;
+}
+
+.summary-card.expense {
+  color: #dc2626;
+}
+
+.summary-card.expense .summary-icon {
+  color: #dc2626;
+  background: #fee2e2;
+}
+
+.summary-card.balance {
+  color: #4f46e5;
+}
+
+.summary-card.balance .summary-icon {
+  color: #4f46e5;
+  background: #e0e7ff;
+}
+
+.summary-card.savings {
+  color: #d97706;
+}
+
+.summary-card.savings .summary-icon {
+  color: #d97706;
+  background: #fef3c7;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .summary-card {
+    min-height: 145px;
+    padding: 17px;
+  }
+
+  .summary-card h2 {
+    font-size: 22px;
+  }
+}
