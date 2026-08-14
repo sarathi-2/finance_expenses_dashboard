@@ -6,18 +6,20 @@ import {
 
 import "./Header.css";
 
-function Header({ openSidebar }) {
+function Header({ onMenuClick }) {
   return (
     <header className="header">
       <div className="header-left">
 
-        <button
-          className="menu-button"
-          onClick={openSidebar}
-        >
-          <Menu size={22} />
-        </button>
+         <button
+        className="mobile-menu-btn"
+        onClick={onMenuClick}
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
 
+          
         <div>
           <h1>Finance Dashboard</h1>
 
@@ -45,7 +47,7 @@ function Header({ openSidebar }) {
           </div>
 
           <div className="profile-info">
-            <strong>Admin</strong>
+            <strong>SARATHI</strong>
             <span>Personal Account</span>
           </div>
         </div>
